@@ -16,6 +16,10 @@ h1 {
     
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .imagenes {
     font-size: 100px;
 }
