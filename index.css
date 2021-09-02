@@ -37,13 +37,14 @@ background-blend-mode: hard-light
 }
 
 a {
-    color: white;
+    
     text-decoration: none;
     padding: 5px;
 }
 
 .cards-container div a {
     border: 1px solid white;
+    background-color: rgba(0, 0, 255, 0.349);
 }
 
 
