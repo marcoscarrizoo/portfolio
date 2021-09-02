@@ -6,15 +6,14 @@
     color: white;
 }
 
+
+
 .container-images {
     display: flex;
     justify-content: center;
 }
 
-h1 {
-    border-left: 2px solid white;
-    
-}
+
 
 html {
     scroll-behavior: smooth;
@@ -29,7 +28,10 @@ body{
     font-size: 16px;
     font-family: 'Oswald', sans-serif;
     background-color: #000000;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%236c20e7' fill-opacity='0.2'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+background-image: url("https://1.bp.blogspot.com/-DCPSh5sbOEM/XAAJA17NYiI/AAAAAAAAAAw/UoJs7D4BGywzbQ8RmaMC2TyzjxgTCylKwCLcBGAs/s1600/fr.gif")  ;
+background-blend-mode: hard-light
+
+
     /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%23540606' fill-opacity='0.3'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); */
 
 }
@@ -44,9 +46,6 @@ a {
     border: 1px solid white;
 }
 
-a:hover{
-    border-bottom: 2px solid white;
-}
 
 ul {
     list-style: none;
@@ -66,8 +65,10 @@ ul {
 
 /*es todo lo que esta dentro del nav*/
 .nav-main {
+    position:fixed;
     font-size: 17px;
     display: flex;
+    border-bottom: 1px solid white;
     justify-content: space-between; /*ocupa todo el ancho disponible*/
     align-items: center;
     height: 60px;
@@ -83,6 +84,7 @@ ul {
     display: flex;
     
 }
+
 
 .nav-main ul li { /*esto separa lo que contiene los li*/
     padding: 25px;
@@ -184,7 +186,7 @@ hr {
 }
 
 .proyect-image:hover{
-    box-shadow: 0 0 15px ;
+    box-shadow: 0 0 25px blue;
 }
 
 .cards-container div {
@@ -244,7 +246,8 @@ hr {
 }
 
 .cv-image:hover{
-    box-shadow: 0 0 15px;
+    transform: scale(1.2);
+   
 }
 
 .cv-image{
@@ -252,15 +255,15 @@ height: 400px;
 width: 300px;
 }
 
-.henry {
+.slide-fwd-center {
     height: 280px;
     margin: 10px;
     
     
 }
-.henry:hover{
-    height: 430px;
-    transition: transform 5s ease-in;
+.slide-fwd-center:hover{
+    transform:scale(1.2);
+    animation-delay: 3s
     
 }
 
